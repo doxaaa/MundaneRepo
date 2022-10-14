@@ -1,0 +1,265 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.6f1 (7da38d85baf6) revision 8233869'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 15813 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/All files/Games/Gad181/Mundane game creation/Mundane-Game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59863
+Successfully changed project path to: D:/All files/Games/Gad181/Mundane game creation/Mundane-Game
+D:/All files/Games/Gad181/Mundane game creation/Mundane-Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 75.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.6f1 (7da38d85baf6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/All files/Games/Gad181/Mundane game creation/Mundane-Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.1659
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005180 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 78.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.575 seconds
+Domain Reload Profiling:
+	ReloadAssembly (575ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (405ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (92ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (244ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (118ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003989 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\All files\Games\Gad181\Mundane game creation\Mundane-Game\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\All files\Games\Gad181\Mundane game creation\Mundane-Game\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.908 seconds
+Domain Reload Profiling:
+	ReloadAssembly (909ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (703ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (226ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (322ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3427 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (111.1 KB). Loaded Objects now: 3884.
+Memory consumption went from 119.6 MB to 119.5 MB.
+Total: 3.189300 ms (FindLiveObjects: 0.343900 ms CreateObjectMapping: 0.086000 ms MarkObjects: 2.619700 ms  DeleteObjects: 0.138800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 79135.100570 seconds.
+  path: Assets/Car-MG/TextMesh Pro
+  artifactKey: Guid(37a4fdc09262d334aadd8965c9e3df27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro using Guid(37a4fdc09262d334aadd8965c9e3df27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8e241745817bd330c65b72c35b9567') in 0.010190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Car-MG/Floor.mat
+  artifactKey: Guid(46d7e27fe6b4672418ebf4bdb680bd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/Floor.mat using Guid(46d7e27fe6b4672418ebf4bdb680bd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052046e46ef4566e2c961b41259ddbff') in 0.106352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Car-MG/Scenes
+  artifactKey: Guid(d88fda72a9447854d88f26d8e1fc9caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/Scenes using Guid(d88fda72a9447854d88f26d8e1fc9caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbdad84780182e4632bac5e473af7d3') in 0.001586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 114.282259 seconds.
+  path: Assets/Murder-MG/Materials/matMenu.mat
+  artifactKey: Guid(5c875537335f5674e99e9b28fe92e4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Murder-MG/Materials/matMenu.mat using Guid(5c875537335f5674e99e9b28fe92e4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c354901570031a13715e35b33465e269') in 0.011970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Murder-MG/Materials/matWall.mat
+  artifactKey: Guid(99e7e234fb57bdf46b720dbbef43ab13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Murder-MG/Materials/matWall.mat using Guid(99e7e234fb57bdf46b720dbbef43ab13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ca1a901c3ebd0dd401b447759e80d0') in 0.010956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.068111 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(5cb1b5fcb6fe39a46888cd55e385fc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(5cb1b5fcb6fe39a46888cd55e385fc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edcc21ce09ca218c977d9ea9f422a319') in 0.012713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(ff291d9902409734993a2e095aabd60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(ff291d9902409734993a2e095aabd60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae8c534f0b37922df411d3caa93abb2') in 0.011094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(3ea16aec5ee578242ad1a3654004f637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(3ea16aec5ee578242ad1a3654004f637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81ed3ca4a818c7504008cda03c4c21c') in 0.051473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.534950 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(7a415b8dd453e0649a55e37a06f4dd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(7a415b8dd453e0649a55e37a06f4dd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a54ff603c8aae708e74256e7d833f9') in 0.016392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(fce52bff5c2e16f4f9a3b570fd8019da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(fce52bff5c2e16f4f9a3b570fd8019da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ffc1ecf08396181257ccc62aac348b') in 0.014032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.732984 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(3a48b40b77ab9764d88f0923469ec386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(3a48b40b77ab9764d88f0923469ec386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300b3ed9fb4fdffe16b0c46f8e3041a8') in 0.014079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.263427 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat
+  artifactKey: Guid(6c03b0e6087688346b4b597192301588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat using Guid(6c03b0e6087688346b4b597192301588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42481bee740e72cccfb2b56d19e8e09d') in 0.012760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat
+  artifactKey: Guid(7872c506a96458e4389cefb547d6e67b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat using Guid(7872c506a96458e4389cefb547d6e67b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af351a71b76969749e66306488b20a10') in 0.013017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat
+  artifactKey: Guid(f71c143207ab95a4f8592e722cd0984a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat using Guid(f71c143207ab95a4f8592e722cd0984a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b560e8ce0d9b61ed892e314f4714527d') in 0.010492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat
+  artifactKey: Guid(1810aa12da399ff4ea3900464a023693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat using Guid(1810aa12da399ff4ea3900464a023693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '613ebbde4daff2189979cc972d14d6c6') in 0.011388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat
+  artifactKey: Guid(bfc5e2d92b43b0740a8f60dd1f444758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat using Guid(bfc5e2d92b43b0740a8f60dd1f444758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cba83b182b85fc6028e19ec09c91120') in 0.010911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat
+  artifactKey: Guid(c87e87e8cde2dc04c858f1aef0305dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car-MG/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat using Guid(c87e87e8cde2dc04c858f1aef0305dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe026ea65250816555cb0422af21397e') in 0.010589 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
