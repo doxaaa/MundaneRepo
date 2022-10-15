@@ -22,7 +22,7 @@ public class CrashTrigger : MonoBehaviour
         {
             print("Car Crash");
 
-            EventManager.CrashFunction();
+            EventManager2.CrashFunction();
 
         }
     }

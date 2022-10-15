@@ -35,12 +35,12 @@ public class PlayerMovement : MonoBehaviour
 
     void OnEnable()
     {
-        EventManager.CrashEvent += PlayerCrashesCar; //adds player crash to crashEvent
+        EventManager2.CrashEvent += PlayerCrashesCar; //adds player crash to crashEvent
     }
 
     void OnDisable()
     {
-        EventManager.CrashEvent -= PlayerCrashesCar;//removes player crash to crashEvent
+        EventManager2.CrashEvent -= PlayerCrashesCar;//removes player crash to crashEvent
     }
     
 }

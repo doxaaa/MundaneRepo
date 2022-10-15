@@ -18,11 +18,11 @@ public class WriteWin : MonoBehaviour
     }
     void OnEnable()
     {
-        EventManager.WinEvent += WriteWinText; //adds player crash to crashEvent
+        EventManager2.WinEvent += WriteWinText; //adds player crash to crashEvent
     }
 
     void OnDisable()
     {
-        EventManager.WinEvent -= WriteWinText;//removes player crash to crashEvent
+        EventManager2.WinEvent -= WriteWinText;//removes player crash to crashEvent
     }
 }

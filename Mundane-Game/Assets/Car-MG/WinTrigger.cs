@@ -21,7 +21,8 @@ public class WinTrigger : MonoBehaviour
         {
             print("Win");
 
-            EventManager.WinFunction();
+            EventManager2.WinFunction();
+
 
         }
     }

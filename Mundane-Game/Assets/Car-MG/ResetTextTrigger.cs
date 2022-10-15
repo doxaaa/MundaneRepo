@@ -21,7 +21,7 @@ public class ResetTextTrigger : MonoBehaviour
         {
             print("Remove Text");
 
-            EventManager.ResetFunction();
+            EventManager2.ResetFunction();
 
         }
     }
