@@ -6,7 +6,7 @@ public class SockEvent : MonoBehaviour
 {
     public void Socks()
     {
-        Destroy(this.gameObject);
+        gameObject.GetComponent<Renderer>().material.color = new Color(0.1686f, 0.1607843f, 0.2f);
     }
 
     private void OnEnable()

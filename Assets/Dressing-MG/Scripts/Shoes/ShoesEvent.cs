@@ -6,7 +6,7 @@ public class ShoesEvent : MonoBehaviour
 {
      public void Shoes()
     {
-        Destroy(this.gameObject);
+        gameObject.GetComponent<Renderer>().material.color = new Color(0.02352941f, 0.02352941f, 0.02352941f);
     }
 
     private void OnEnable()
