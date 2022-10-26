@@ -24,11 +24,11 @@ public class ClockIn : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.ClockIn += SuccessfulSwipe;
+        ClockInEventManager.ClockIn += SuccessfulSwipe;
     }
 
     private void OnDisable()
     {
-        EventManager.ClockIn -= SuccessfulSwipe;
+        ClockInEventManager.ClockIn -= SuccessfulSwipe;
     }
 }
