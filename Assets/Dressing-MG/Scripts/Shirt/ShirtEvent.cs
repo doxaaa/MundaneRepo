@@ -6,7 +6,7 @@ public class ShirtEvent : MonoBehaviour
 {
     public void Shirt()
     {
-        Destroy(this.gameObject);
+        gameObject.GetComponent<Renderer>().material.color = new Color(0.8431373f, 0.8352942f, 0.8588236f);
     }
 
     private void OnEnable()
