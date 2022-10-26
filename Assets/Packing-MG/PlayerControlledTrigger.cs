@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerControlledTrigger : MonoBehaviour
 {
+    private int movingBoxObjectNameChange;
     // Start is called before the first frame update
     void Start()
     {
-        
+        movingBoxObjectNameChange = 0;
     }
 
     // Update is called once per frame
@@ -24,7 +25,9 @@ public class PlayerControlledTrigger : MonoBehaviour
 
     void OnTriggerStay(Collider CollisionData) 
     {
+        if(CollisionData.name == "MovingObject("+movingBoxObjectNameChange+")")
         print("In collison");
+        movingBoxObjectNameChange = movingBoxObjectNameChange + 1;
         if(Input.GetKeyDown("z"))   
             {
 
