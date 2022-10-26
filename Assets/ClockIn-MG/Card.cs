@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventManager : MonoBehaviour
+public class Card : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,12 +14,5 @@ public class EventManager : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public delegate void CardSwipe();
-    public static event CardSwipe ClockIn;
-    public static void RunCardSwipe()
-    {
-        ClockIn?.Invoke();
     }
 }
