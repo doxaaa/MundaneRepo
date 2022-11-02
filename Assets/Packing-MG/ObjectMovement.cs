@@ -27,33 +27,16 @@ public class ObjectMovement : MonoBehaviour
         }        
         
     }
-    void CollisionWithBar()
-    {
-        checkCollison=true;
-        boxCountPacked = boxCountPacked + 1;
-        print(boxCountPacked);
-    }
-
-    void OnEnable()
-    {
-        EventManagerForPackingMinigame.PackageEvent += CollisionWithBar;
-    }
-
-    void OnDisable()
-    {
-        EventManagerForPackingMinigame.PackageEvent -= CollisionWithBar;
-    }
 
 
-    void OnTriggerStay(Collider CollisionData)
+    void OnTriggerEnter(Collider CollisionData)
     {
-        if(checkCollison == true)
+
+        if(CollisionData.name == "PackageBox")
             {
-                if(CollisionData.name == "PlayerCollisonBox")
-                    {
-                    this.transform.position += new Vector3(0,0,-.1f);
-                    }
+                checkCollison = true;
             }
+
     }
 
 
