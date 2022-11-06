@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class mainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public MurderManager myMurderManager;
 
     // Update is called once per frame
     void Update()
@@ -16,6 +12,7 @@ public class mainMenu : MonoBehaviour
         if(Input.GetKeyDown("space"))
         {
             Destroy(gameObject);
+            myMurderManager.Start();
         }
     }
 }
