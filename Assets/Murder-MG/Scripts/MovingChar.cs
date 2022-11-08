@@ -23,7 +23,7 @@ public class MovingChar : MonoBehaviour
     {
         //creating the parameters that will define the variables
         string alphabet = ("abcdefghijklmnopqrstuvwxyz1234567890");
-        int randomNumber = Random.Range(0, 63);
+        int randomNumber = Random.Range(0, 35);
         char randomChar = (alphabet[randomNumber]);
 
         //assigning the results to the variables
@@ -35,17 +35,15 @@ public class MovingChar : MonoBehaviour
         //create the Cube here, create the movement and then apply 'currentSpeed' to it.
         cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         cube.transform.position = new Vector3(currentCoords, 60f, -0.1f);
-        moveCube = true;
     }
 
     void FixedUpdate()
     {
-        if (moveCube == true)
-        {
-            cube.transform.position += new Vector3(0.1f, 0f, 0f);
-            currentCoords += 0.2f;
-            moveCube = false;
-        }
+      
+        cube.transform.position += new Vector3(0.1f, 0f, 0f);
+        currentCoords += 0.2f;
+        moveCube = false;
+        
     }
 
     public string GetCurrentChar()

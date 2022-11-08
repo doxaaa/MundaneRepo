@@ -13,11 +13,11 @@ public class MurderManager : MonoBehaviour
     public TMP_Text textRandomLetter;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-       charList = new List<MovingChar>();
-       
-       CreateMovingChar();
+        charList = new List<MovingChar>();
+
+        CreateMovingChar();     
     }
 
     // Update is called once per frame
@@ -25,18 +25,22 @@ public class MurderManager : MonoBehaviour
     {
         if (Input.GetKeyDown(charList[0].GetCurrentChar()))
         {
+            print("Hello World");
             DestroyMovingObject();
             CreateMovingChar();
         }
         
+
         /*
         if (charList[0].GameObject.position >= (11.75f, 0f, 0.1f))
         {           
         }
         */
 
+        
         if (charList[0].GetCurrentCoords() >= 11.75f)
         {
+            print("Hello World");
             DestroyMovingObject();
             CreateMovingChar();
         }
@@ -58,5 +62,7 @@ public class MurderManager : MonoBehaviour
     public void DestroyMovingObject()
     {
         charList.Clear();
+        print("Deleted");
+        print(charList.Length);
     }
 }
