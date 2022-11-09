@@ -8,18 +8,18 @@ public class LevelLoader : MonoBehaviour
     // Start is called before the first frame update
 
     public float transitionTime = 1f;
-
+    public bool CheckForWinState = false;
     public Animator transition;
 
     void Start()
     {
-        
+        CheckForWinState = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(CheckForWinState == true)
         {
             LoadNextLevel();
         }
@@ -38,4 +38,17 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(levelIndex);
     }
 
+    void PlayTransition()
+    {
+        CheckForWinState = true;
+    }
+
+    void OnEnabled() 
+    {
+        EventManagerMain.LoadSceneEvent += PlayTransition;
+    }
+    void OnDisable() 
+    {
+        EventManagerMain.LoadSceneEvent -= PlayTransition;
+    }
 }

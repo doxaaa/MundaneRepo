@@ -126,4 +126,34 @@ public class EventManagerMain : MonoBehaviour
             PackageEvent(); //triggers the event
         }
     }
+
+    public delegate void LoadSceneAction();
+
+    //declaring event
+    public static event LoadSceneAction LoadSceneEvent;
+
+    public static void LoadSceneFunction() 
+    {
+    //if event is not empty
+        print("event triggered!");
+        if(LoadSceneEvent != null)
+        {
+            LoadSceneEvent(); //triggers the event
+        }
+    }
+
+    public delegate void DressingWinAction();
+
+    //declaring event
+    public static event DressingWinAction DressingWinEvent;
+
+    public static void DressingWinFunction() 
+    {
+    //if event is not empty
+        print("event triggered!");
+        if(DressingWinEvent != null)
+        {
+            DressingWinEvent(); //triggers the event
+        }
+    }
 }

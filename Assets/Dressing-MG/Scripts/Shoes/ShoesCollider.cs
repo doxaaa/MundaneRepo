@@ -9,6 +9,7 @@ public class ShoesCollider : MonoBehaviour
         if (CollisionData.name == "RightFoot")
         {
             EventManagerMain.RunShoeEvent();
+            EventManagerMain.DressingWinFunction();
             print("Socks Put On");
 
             Destroy(this.gameObject);
