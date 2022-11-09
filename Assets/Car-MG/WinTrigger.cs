@@ -23,6 +23,8 @@ public class WinTrigger : MonoBehaviour
 
             EventManager2.WinFunction();
 
+            LevelLoader.LoadNextLevel();
+
 
         }
     }
