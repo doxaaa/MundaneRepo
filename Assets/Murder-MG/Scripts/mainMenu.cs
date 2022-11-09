@@ -12,7 +12,7 @@ public class mainMenu : MonoBehaviour
         if(Input.GetKeyDown("space"))
         {
             Destroy(gameObject);
-            myMurderManager.Start();
+            
         }
     }
 }

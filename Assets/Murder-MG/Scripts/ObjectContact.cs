@@ -9,7 +9,7 @@ public class ObjectContact : MonoBehaviour
 
     void OnTriggerEnter(Collider CollisionData)
     {
-        if(CollisionData.name == ("cube"));
+        if(CollisionData.name == "cube");
         {
             myMurderManager.DestroyMovingObject();
         }
