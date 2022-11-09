@@ -11,11 +11,11 @@ public class ShoesEvent : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.ShoesOnTouched += Shoes;
+        EventManagerMain.ShoesOnTouched += Shoes;
     }
 
     private void OnDisable()
     {
-        EventManager.ShoesOnTouched -= Shoes;
+        EventManagerMain.ShoesOnTouched -= Shoes;
     }
 }

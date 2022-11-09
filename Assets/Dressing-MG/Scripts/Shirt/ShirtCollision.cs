@@ -8,7 +8,7 @@ public class ShirtCollision : MonoBehaviour
     {
         if (CollisionData.name == "Chest")
         {
-            EventManager.RunShirtEvent();
+            EventManagerMain.RunShirtEvent();
             print("Shirt Put On");
 
             Destroy(this.gameObject);

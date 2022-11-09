@@ -13,12 +13,12 @@ public class ReplaceShirt : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.ShirtOnTouched += Shirt;
+        EventManagerMain.ShirtOnTouched += Shirt;
     }
 
     private void OnDisable()
     {
-        EventManager.ShirtOnTouched -= Shirt;
+        EventManagerMain.ShirtOnTouched -= Shirt;
     }
 
     void FixedUpdate()

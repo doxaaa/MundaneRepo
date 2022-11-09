@@ -18,12 +18,12 @@ public class MakeObject : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManagerBuild.BuildObject += MatchingParts;
+        EventManagerMain.BuildObject += MatchingParts;
     }
 
     private void OnDisable()
     {
-        EventManagerBuild.BuildObject -= MatchingParts;
+        EventManagerMain.BuildObject -= MatchingParts;
     }
 
     public void MatchingParts()

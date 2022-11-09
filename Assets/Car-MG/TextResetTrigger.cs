@@ -21,12 +21,12 @@ public class TextResetTrigger : MonoBehaviour
     }
     void OnEnable()
     {
-        EventManager2.ResetEvent += ResetTMPObject; //adds player crash to crashEvent
+        EventManagerMain.ResetEvent += ResetTMPObject; //adds player crash to crashEvent
     }
 
     void OnDisable()
     {
-        EventManager2.ResetEvent -= ResetTMPObject;//removes player crash to crashEvent
+        EventManagerMain.ResetEvent -= ResetTMPObject;//removes player crash to crashEvent
     }
 }
     

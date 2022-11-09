@@ -32,7 +32,7 @@ public class PlayerControlledTrigger : MonoBehaviour
             {
 
                     print("event played");
-                    EventManagerForPackingMinigame.PackageFunction();
+                    EventManagerMain.PackageFunction();
 
 
             }
