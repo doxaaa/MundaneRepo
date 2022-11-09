@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void MovePlayer()
     {
-        
+        this.transform.position += new Vector3(2f, 0f, 0f);
+    }
+    
+    private void OnEnable()
+    {
+        MurderEventManager.OnMovePlayer += MovePlayer;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        MurderEventManager.OnMovePlayer -= MovePlayer;
     }
 }
