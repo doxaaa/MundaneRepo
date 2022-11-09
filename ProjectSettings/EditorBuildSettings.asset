@@ -9,11 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 40bfaa10a8dd5a546ab8eb5b3fa69b16
   - enabled: 1
-    path: Assets/Scenes/CarMG.unity
-    guid: 9b65c161643de8b4ab3953025b3c54a5
+    path: Assets/Scenes/Shower.unity
+    guid: 19da1f2c2c414aa4fbdde69b780e6412
   - enabled: 1
     path: Assets/Scenes/DressingMG.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CarMG.unity
+    guid: 9b65c161643de8b4ab3953025b3c54a5
+  - enabled: 1
+    path: Assets/Scenes/PackingMG.unity
+    guid: cfe6136380203504581b6120e1c87c0a
   - enabled: 1
     path: Assets/Scenes/MurderMG.unity
     guid: 96d710861fb3c024eb0c7faadded3b96
