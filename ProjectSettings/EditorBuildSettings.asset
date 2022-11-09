@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 40bfaa10a8dd5a546ab8eb5b3fa69b16
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Shower.unity
     guid: 19da1f2c2c414aa4fbdde69b780e6412
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/DressingMG.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: e0d9be6f568183d42af89beab6592967
   - enabled: 1
     path: Assets/Scenes/CarMG.unity
     guid: 9b65c161643de8b4ab3953025b3c54a5
@@ -23,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MurderMG.unity
     guid: 96d710861fb3c024eb0c7faadded3b96
+  - enabled: 1
+    path: Assets/Scenes/Building.unity
+    guid: 81dca8ce95434ad4aa9d9309f18b1d04
   m_configObjects: {}

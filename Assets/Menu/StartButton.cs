@@ -3,18 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class StartButton : MonoBehaviour
 {
-
-    public void startGame()
+    public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
-    public void quitGame()
-    {
-        Debug.Log("This would quit the game if fully built");
-        Application.Quit();
-    }
-
 }
