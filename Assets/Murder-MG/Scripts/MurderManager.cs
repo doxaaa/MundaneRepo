@@ -39,7 +39,7 @@ public class MurderManager : MonoBehaviour
                     print("Hello World");
                     DestroyMovingObject();
                     CreateMovingChar();
-                    MurderEventManager.RunMovePlayerEvent();
+                    EventManagerMain.RunMovePlayerEvent();
                     playerLocation += 2;
                 }
             }

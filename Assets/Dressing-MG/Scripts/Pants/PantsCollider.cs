@@ -8,7 +8,7 @@ public class PantsCollider : MonoBehaviour
     {
         if (CollisionData.name == "RightLeg")
         {
-            EventManager.RunPantsEvent();
+            EventManagerMain.RunPantsEvent();
             print("Pants Put On");
 
             Destroy(this.gameObject);

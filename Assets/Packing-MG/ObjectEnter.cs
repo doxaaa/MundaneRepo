@@ -18,6 +18,6 @@ public class ObjectEnter : MonoBehaviour
     void OnTriggerEnter(Collider CollisionData) 
     {
         print("event played");
-        EventManagerForPackingMinigame.PackageFunction();
+        EventManagerMain.PackageFunction();
     }
 }

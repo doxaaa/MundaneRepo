@@ -11,11 +11,11 @@ public class SockEvent : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.SocksOnTouched += Socks;
+        EventManagerMain.SocksOnTouched += Socks;
     }
 
     private void OnDisable()
     {
-        EventManager.SocksOnTouched -= Socks;
+        EventManagerMain.SocksOnTouched -= Socks;
     }
 }

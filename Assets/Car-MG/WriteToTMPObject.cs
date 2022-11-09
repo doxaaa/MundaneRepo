@@ -22,11 +22,11 @@ public class WriteToTMPObject : MonoBehaviour
     }
     void OnEnable()
     {
-        EventManager2.CrashEvent += WriteDeathText; //adds player crash to crashEvent
+        EventManagerMain.CrashEvent += WriteDeathText; //adds player crash to crashEvent
     }
 
     void OnDisable()
     {
-        EventManager2.CrashEvent -= WriteDeathText;//removes player crash to crashEvent
+        EventManagerMain.CrashEvent -= WriteDeathText;//removes player crash to crashEvent
     }
 }

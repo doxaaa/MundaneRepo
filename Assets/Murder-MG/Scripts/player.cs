@@ -11,11 +11,11 @@ public class Player : MonoBehaviour
     
     private void OnEnable()
     {
-        MurderEventManager.OnMovePlayer += MovePlayer;
+        EventManagerMain.OnMovePlayer += MovePlayer;
     }
 
     private void OnDisable()
     {
-        MurderEventManager.OnMovePlayer -= MovePlayer;
+        EventManagerMain.OnMovePlayer -= MovePlayer;
     }
 }

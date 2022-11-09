@@ -24,7 +24,7 @@ public class BuildSpace : MonoBehaviour
     {
         if (collisionObject.name == "Part One")
         {
-            EventManagerBuild.RunCorrectPart();
+            EventManagerMain.RunCorrectPart();
             m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         }
     }

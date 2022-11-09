@@ -21,9 +21,9 @@ public class WinTrigger : MonoBehaviour
         {
             print("Win");
 
-            EventManager2.WinFunction();
+            EventManagerMain.WinFunction();
 
-            LevelLoader.LoadNextLevel();
+            //LevelLoader.LoadNextLevel();
 
 
         }

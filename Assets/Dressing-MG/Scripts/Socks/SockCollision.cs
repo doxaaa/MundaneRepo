@@ -8,7 +8,7 @@ public class SockCollision : MonoBehaviour
     {
         if (CollisionData.name == "RightSock")
         {
-            EventManager.RunSockEvent();
+            EventManagerMain.RunSockEvent();
             print("Socks Put On");
 
             Destroy(this.gameObject);

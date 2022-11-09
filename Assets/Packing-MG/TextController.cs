@@ -26,10 +26,10 @@ public class TextController : MonoBehaviour
 
     void OnEnable()
     {
-        EventManagerForPackingMinigame.PackageEvent += CountItemsPackaged;
+        EventManagerMain.PackageEvent += CountItemsPackaged;
     }
     void OnDisable()
     {
-        EventManagerForPackingMinigame.PackageEvent -= CountItemsPackaged;
+        EventManagerMain.PackageEvent -= CountItemsPackaged;
     }
 }

@@ -11,11 +11,11 @@ public class PantsEvent : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.PantsOnTouched += Pants;
+        EventManagerMain.PantsOnTouched += Pants;
     }
 
     private void OnDisable()
     {
-        EventManager.PantsOnTouched -= Pants;
+        EventManagerMain.PantsOnTouched -= Pants;
     }
 }
