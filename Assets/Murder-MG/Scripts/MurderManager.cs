@@ -46,7 +46,6 @@ public class MurderManager : MonoBehaviour
         }
 
 
-
         /*
         if (charList[0].GameObject.position >= (11.75f, 0f, 0.1f))
         {           

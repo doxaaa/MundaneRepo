@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WinTrigger : MonoBehaviour
 {
+    public LevelLoader myLevelLoader;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,15 +19,13 @@ public class WinTrigger : MonoBehaviour
     }
     void OnTriggerEnter(Collider CollisionData) 
     {
-            if(CollisionData.name == "Player")
+        if(CollisionData.name == "Player")
         {
             print("Win");
 
             EventManager2.WinFunction();
 
-            LevelLoader.LoadNextLevel();
-
-
+            myLevelLoader.LoadNextLevel();
         }
     }
 
