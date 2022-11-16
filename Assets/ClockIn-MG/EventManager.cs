@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardReader : MonoBehaviour
+public class EventManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,11 +15,11 @@ public class CardReader : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider collisionObject)
+
+    public delegate void CardSwipe();
+    public static event CardSwipe ClockIn;
+    public static void RunCardSwipe()
     {
-        if (collisionObject.name == "Card")
-        {
-            EventManager.RunCardSwipe();
-        }
+        ClockIn?.Invoke();
     }
 }
