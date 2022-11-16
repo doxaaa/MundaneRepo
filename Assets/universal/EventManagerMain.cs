@@ -156,4 +156,11 @@ public class EventManagerMain : MonoBehaviour
             DressingWinEvent(); //triggers the event
         }
     }
+
+    public delegate void CardSwipe();
+    public static event CardSwipe ClockIn;
+    public static void RunCardSwipe()
+    {
+        ClockIn?.Invoke();
+    }
 }
