@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+
+    private float yPos;
     // Start is called before the first frame update
     void Start()
     {
-        
+        yPos = gameObject.transform.position.y;
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class Movement : MonoBehaviour
 
         // z coordinate of game object on screen
         mousePoint.z = mZCoord;
+        mousePoint.y = yPos;
 
         // Convert it to world points
         return Camera.main.ScreenToWorldPoint(mousePoint);
