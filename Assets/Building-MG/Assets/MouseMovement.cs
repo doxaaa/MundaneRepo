@@ -6,6 +6,7 @@ public class MouseMovement : MonoBehaviour
 {
     private Vector3 mOffset;
     private float mZCoord;
+    public bool nowImHome;
 
     void OnMouseDown()
     {
