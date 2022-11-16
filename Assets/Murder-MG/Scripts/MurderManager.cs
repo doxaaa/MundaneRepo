@@ -20,7 +20,6 @@ public class MurderManager : MonoBehaviour
     public void Start()
     {
         charList = new List<MovingChar>();
-
         CreateMovingChar();     
     }
 
@@ -44,8 +43,6 @@ public class MurderManager : MonoBehaviour
                 }
             }
         }
-
-
 
         /*
         if (charList[0].GameObject.position >= (11.75f, 0f, 0.1f))
@@ -100,6 +97,4 @@ public class MurderManager : MonoBehaviour
             charList[0].currentCoords += 0.1f;
         }
     }
-    
-
 }
