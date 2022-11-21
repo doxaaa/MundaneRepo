@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CrashTrigger : MonoBehaviour
 {
 
@@ -23,6 +23,7 @@ public class CrashTrigger : MonoBehaviour
             print("Car Crash");
 
             EventManagerMain.CrashFunction();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         }
     }
