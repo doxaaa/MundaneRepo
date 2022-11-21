@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CardReader : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class CardReader : MonoBehaviour
         if (collisionObject.name == "Card")
         {
             EventManagerMain.RunCardSwipe();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

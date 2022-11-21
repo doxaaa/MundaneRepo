@@ -21,7 +21,7 @@ public class TextController : MonoBehaviour
     void CountItemsPackaged()
     {
         itemsPacked = itemsPacked + 1;
-        textForTextItem.text = itemsPacked + " has been packed!";
+        textForTextItem.text = itemsPacked + " HAS BEEN PACKED!";
     }
 
     void OnEnable()
