@@ -31,6 +31,12 @@ public class ProtoLevelLoader : MonoBehaviour
         loserObject.SetActive(true);
         StartCoroutine(Restart());
     }
+    // Function to restart the game
+    IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
     // Function to load the next level
     IEnumerator LoadNextLevel()
@@ -39,10 +45,5 @@ public class ProtoLevelLoader : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    // Function to restart the game
-    IEnumerator Restart()
-    {
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+
 }
