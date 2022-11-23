@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClockOUTminigame.unity
     guid: 39cb3c231bbee89408aaf5bbb6e958e6
+  - enabled: 1
+    path: Assets/Scenes/DriveHome.unity
+    guid: e8b3f422addfd024b85095bcf4390207
   - enabled: 0
     path: Assets/Scenes/DriveHomeMG.unity
     guid: 2ff65e7e71c04574ab48cd5177e73a18
