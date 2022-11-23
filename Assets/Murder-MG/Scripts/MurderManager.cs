@@ -36,7 +36,6 @@ public class MurderManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(charList[0].GetCurrentChar()))
                 {
-                    print("Hello World");
                     DestroyMovingObject();
                     CreateMovingChar();
                     EventManagerMain.RunMovePlayerEvent();
@@ -57,7 +56,6 @@ public class MurderManager : MonoBehaviour
         {
             if (charList[0].GetCurrentCoords() >= 2f)
             {
-                print("Hello World");
                 DestroyMovingObject();
                 CreateMovingChar();
             }
@@ -90,7 +88,6 @@ public class MurderManager : MonoBehaviour
     {
         charList[0].DestroyCube();
         charList.Clear();
-        print("Deleted");
         print(charList.Count);
     }
 
