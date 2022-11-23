@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     public void MovePlayer()
     {
-        this.transform.position += new Vector3(2f, 0f, 0f);
+        this.transform.position += new Vector3(1f, 0f, 0f);
     }
 
     private void OnEnable()
