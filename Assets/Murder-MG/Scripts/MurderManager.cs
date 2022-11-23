@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class MurderManager : MonoBehaviour
 {
     public List<MovingChar> charList;
@@ -67,6 +67,8 @@ public class MurderManager : MonoBehaviour
         {
             murderText.text = "CoWorker Killed";
             gameOver = true;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
     }   
 

@@ -32,7 +32,7 @@ public class TestCountdown : MonoBehaviour
 
             if (timeRemaining == 0 && timerIsRunning == false)
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene("Fail");
                 }
             }
         }

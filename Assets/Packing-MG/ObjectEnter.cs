@@ -14,7 +14,7 @@ public class ObjectEnter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(packageCount == 10)
+        if(packageCount >= 10)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

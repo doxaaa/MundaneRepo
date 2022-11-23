@@ -23,7 +23,7 @@ public class CrashTrigger : MonoBehaviour
             print("Car Crash");
 
             EventManagerMain.CrashFunction();
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("Fail");
 
         }
     }
