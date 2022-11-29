@@ -6,6 +6,8 @@ public class ObjectEnter : MonoBehaviour
 {
     // Start is called before the first frame update
     private int packageCount;
+
+    public Animator Transition;
     void Start()
     {
         packageCount = 0;
@@ -16,7 +18,7 @@ public class ObjectEnter : MonoBehaviour
     {
         if(packageCount >= 10)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            LevelNext();
         }
     }
     void OnTriggerEnter(Collider CollisionData) 
@@ -26,5 +28,22 @@ public class ObjectEnter : MonoBehaviour
         packageCount = packageCount + 1;
         print(packageCount);
 
+    }
+
+
+
+
+    public void LevelNext()
+    {
+        Transition.SetTrigger("Start");
+
+        StartCoroutine(LoadNextLevel());
+    }
+    // Function to load the next level
+    IEnumerator LoadNextLevel()
+    {
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

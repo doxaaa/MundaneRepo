@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class WinCheck : MonoBehaviour
 {
     private int clothingCount = 0;
-
+    public Animator Transition;
     private void clothesPutOn()
     {
         clothingCount = clothingCount + 1;
@@ -16,7 +16,7 @@ public class WinCheck : MonoBehaviour
     {
         if(clothingCount == 4)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            LevelNext();
         }
     }
 
@@ -29,4 +29,19 @@ public class WinCheck : MonoBehaviour
         EventManagerMain.DressingWinEvent -= clothesPutOn;
     }
 
+
+
+    public void LevelNext()
+    {
+        Transition.SetTrigger("Start");
+
+        StartCoroutine(LoadNextLevel());
+    }
+    // Function to load the next level
+    IEnumerator LoadNextLevel()
+    {
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

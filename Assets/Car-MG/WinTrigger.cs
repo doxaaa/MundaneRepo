@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class WinTrigger : MonoBehaviour
 {
+
+
+
+    public Animator Transition;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +30,28 @@ public class WinTrigger : MonoBehaviour
             print("Win");
 
             EventManagerMain.WinFunction();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            LevelNext();
             
 
 
         }
+
+    }
+
+
+
+    public void LevelNext()
+    {
+        Transition.SetTrigger("Start");
+
+        StartCoroutine(LoadNextLevel());
+    }
+    // Function to load the next level
+    IEnumerator LoadNextLevel()
+    {
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }

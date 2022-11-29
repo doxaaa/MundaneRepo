@@ -16,6 +16,7 @@ public class MurderManager : MonoBehaviour
     public int playerLocation = 0;
     bool gameOver = false;
 
+    public Animator Transition;
     // Start is called before the first frame update
     public void Start()
     {
@@ -65,7 +66,7 @@ public class MurderManager : MonoBehaviour
         {
             murderText.text = "CoWorker Killed";
             gameOver = true;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            LevelNext();
 
         }
     }   
@@ -99,6 +100,23 @@ public class MurderManager : MonoBehaviour
             charList[0].currentCoords += 0.1f;
         }
     }
-    
+
+
+
+
+
+    public void LevelNext()
+    {
+        Transition.SetTrigger("Start");
+
+        StartCoroutine(LoadNextLevel());
+    }
+    // Function to load the next level
+    IEnumerator LoadNextLevel()
+    {
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
 }

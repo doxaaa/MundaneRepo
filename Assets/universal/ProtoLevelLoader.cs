@@ -20,11 +20,7 @@ public class ProtoLevelLoader : MonoBehaviour
         
     }
 
-    //Activate victory thing
-    public void levelWon() {
-        victoryObject.SetActive(true);
-        StartCoroutine(LoadNextLevel());
-    }
+
 
     //Active lose state thing
      public void levelLost() {
@@ -38,6 +34,14 @@ public class ProtoLevelLoader : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+
+
+    //Activate victory thing
+    public void levelWon()
+    {
+        victoryObject.SetActive(true);
+        StartCoroutine(LoadNextLevel());
+    }
     // Function to load the next level
     IEnumerator LoadNextLevel()
     {
