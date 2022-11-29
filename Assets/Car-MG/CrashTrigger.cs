@@ -6,6 +6,9 @@ public class CrashTrigger : MonoBehaviour
 {
 
     // Start is called before the first frame update
+
+
+    public Animator Transition;
     void Start()
     {
         
@@ -23,8 +26,24 @@ public class CrashTrigger : MonoBehaviour
             print("Car Crash");
 
             EventManagerMain.CrashFunction();
-            SceneManager.LoadScene("Fail");
+            levelLost();
 
         }
+    }
+
+
+
+
+    public void levelLost()
+    {
+        Transition.SetTrigger("Start");
+        StartCoroutine(Restart());
+    }
+    // Function to restart the game
+    IEnumerator Restart()
+    {
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Fail");
     }
 }

@@ -10,6 +10,7 @@ public class TestCountdown : MonoBehaviour
     public float timeRemaining = 30;
     public bool timerIsRunning = false;
     public TMP_Text timeText;
+    public Animator Transition;
     private void Start()
     {
         // Starts the timer automatically
@@ -32,7 +33,7 @@ public class TestCountdown : MonoBehaviour
 
             if (timeRemaining == 0 && timerIsRunning == false)
                 {
-                    SceneManager.LoadScene("Fail");
+                    levelLost();
                 }
             }
         }
@@ -43,5 +44,22 @@ public class TestCountdown : MonoBehaviour
         float minutes = Mathf.FloorToInt(timeToDisplay / 60); 
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+
+
+
+
+    public void levelLost()
+    {
+        Transition.SetTrigger("Start");
+        StartCoroutine(Restart());
+    }
+    // Function to restart the game
+    IEnumerator Restart()
+    {
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Fail");
     }
 }

@@ -13,16 +13,13 @@ public class LevelLoader : MonoBehaviour
 
     void Start()
     {
-        CheckForWinState = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(CheckForWinState == true)
-        {
-            LoadNextLevel();
-        }
+
     }
     public void LoadNextLevel()
     {
@@ -36,19 +33,24 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(levelIndex);
+
     }
 
-    void PlayTransition()
+
+
+
+    public void LoadFailLevel()
     {
-        CheckForWinState = true;
+        StartCoroutine(LoadFailLevel("Fail"));
     }
 
-    void OnEnabled() 
+    IEnumerator LoadFailLevel(string failLevel)
     {
-        EventManagerMain.LoadSceneEvent += PlayTransition;
-    }
-    void OnDisable() 
-    {
-        EventManagerMain.LoadSceneEvent -= PlayTransition;
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(failLevel);
+
     }
 }
