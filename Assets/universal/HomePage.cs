@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class HomePage : MonoBehaviour
 {
+
+
+    public Animator Transition;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,25 @@ public class HomePage : MonoBehaviour
 
     public void ReturnHome()
     {
+        LevelNext();
+    }
+
+
+
+
+
+
+    public void LevelNext()
+    {
+        Transition.SetTrigger("Start");
+
+        StartCoroutine(LoadNextLevel());
+    }
+    // Function to load the next level
+    IEnumerator LoadNextLevel()
+    {
+
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(0);
     }
 }
