@@ -9,17 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 40bfaa10a8dd5a546ab8eb5b3fa69b16
   - enabled: 0
-    path: Assets/Scenes/Shower.unity
+    path: Assets/Scenes/Quarintine/Shower.unity
     guid: 19da1f2c2c414aa4fbdde69b780e6412
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/DressingMG 1.unity
     guid: 969bb10e1c30b194eb3d5092eae5d4e1
-  - enabled: 0
-    path: Assets/Scenes/DressingMG.unity
-    guid: e0d9be6f568183d42af89beab6592967
   - enabled: 1
     path: Assets/Scenes/CarMG.unity
     guid: 9b65c161643de8b4ab3953025b3c54a5
@@ -36,14 +30,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MurderMG.unity
     guid: 96d710861fb3c024eb0c7faadded3b96
   - enabled: 1
-    path: Assets/Scenes/ClockOUTminigame.unity
-    guid: 39cb3c231bbee89408aaf5bbb6e958e6
+    path: Assets/Scenes/ClockOut.unity
+    guid: 0497f4cf532e5714a8739713d9a7b0bd
   - enabled: 1
     path: Assets/Scenes/DriveHome.unity
     guid: e8b3f422addfd024b85095bcf4390207
-  - enabled: 0
-    path: Assets/Scenes/DriveHomeMG.unity
-    guid: 2ff65e7e71c04574ab48cd5177e73a18
   - enabled: 1
     path: Assets/Scenes/winscreen.unity
     guid: 6b07c68506802f4478689a50140ac01d
