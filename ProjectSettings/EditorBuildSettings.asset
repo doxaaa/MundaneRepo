@@ -24,11 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Building.unity
     guid: 81dca8ce95434ad4aa9d9309f18b1d04
   - enabled: 1
-    path: Assets/Scenes/PackingMG.unity
-    guid: cfe6136380203504581b6120e1c87c0a
-  - enabled: 1
     path: Assets/Scenes/MurderMG.unity
     guid: 96d710861fb3c024eb0c7faadded3b96
+  - enabled: 1
+    path: Assets/Scenes/PackingMG.unity
+    guid: cfe6136380203504581b6120e1c87c0a
   - enabled: 1
     path: Assets/Scenes/ClockOut.unity
     guid: 0497f4cf532e5714a8739713d9a7b0bd
