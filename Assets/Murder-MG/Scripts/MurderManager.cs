@@ -9,7 +9,7 @@ public class MurderManager : MonoBehaviour
     public MovingChar currentChar;
 
     public MovingChar myMovingChar;
-    public Player myPlayer;
+    public player myPlayer;
 
     public TMP_Text murderText;
     
