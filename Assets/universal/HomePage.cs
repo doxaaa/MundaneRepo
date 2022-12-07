@@ -42,4 +42,27 @@ public class HomePage : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(0);
     }
+
+
+
+
+    public void Restart()
+    {
+        Retry();
+    }
+
+
+    public void Retry()
+    {
+        Transition.SetTrigger("Start");
+
+        StartCoroutine(RetryLevel());
+    }
+    // Function to load the next level
+    IEnumerator RetryLevel()
+    {
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(1);
+    }
 }
