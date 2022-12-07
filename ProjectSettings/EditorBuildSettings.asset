@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClockIn.unity
     guid: 5f82c6cda9d1f5d4f851be80ec07cfe2
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Building.unity
     guid: 81dca8ce95434ad4aa9d9309f18b1d04
   - enabled: 1

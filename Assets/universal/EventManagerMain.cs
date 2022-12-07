@@ -24,6 +24,8 @@ public class EventManagerMain : MonoBehaviour
         BuildObject?.Invoke();
     }
 
+
+
     
     public delegate void CrashAction();
 
@@ -54,11 +56,10 @@ public class EventManagerMain : MonoBehaviour
             ResetEvent(); //triggers the event
         }
     }
-        public delegate void WinAction();
-
+    
+    public delegate void WinAction();
     //declaring event
     public static event WinAction WinEvent;
-
     public static void WinFunction()
     {
     //if event is not empty
